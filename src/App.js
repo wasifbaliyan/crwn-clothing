@@ -11,6 +11,7 @@ import "./App.css";
 import { selectCurrentUser } from "./redux/user/user.selectors";
 import { createStructuredSelector } from "reselect";
 import CheckoutPage from "./pages/checkout/checkout.component";
+import ContactPage from "./pages/contact/contact.component";
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -47,6 +48,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
+          <Route path="/contact" component={ContactPage} />
           <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact
